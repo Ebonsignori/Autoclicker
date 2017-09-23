@@ -1,6 +1,8 @@
 # Auto[click]mate
 Auto[click]mate is a program that automates mouse movement and clicking over a given number of screen captures. In its current phase, the program accepts files of screen captures taken with Windows snipping tool or a similar utility. 
 
+![Alt text](/img/V.5_GUI.PNG?raw=true "GUI of V0.5")
+
 # Features
 - Move between 1-infinitly many images on screen
 - Change interval of click, number of iterations, and number of clicks at each screen position (as designated through a provided screenshot)
