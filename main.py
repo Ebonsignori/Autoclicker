@@ -280,10 +280,10 @@ class Application(tk.Frame):
         self.num_of_imgs = int(self.num_of_img_dropdown.get())
         del self.images[:]
         for i in range(self.num_of_imgs):
-            self.images.append(filedialog.askopenfilename())
+            self.images.append(filedialog.askopenfilename(title="Select Image #" + str(i + 1), defaultextension=".txt", filetypes=(("Image Files", "*.png;*.jpeg;*.jpg"), ("all files", "*.*"))))
         self.locate_confirm_btn.configure(state="normal")
         if "" in self.images:
-            self.status_label.configure(text="Please Select " + self.num_of_imgs + " screenshots.")
+            self.status_label.configure(text="Please Select " + str(self.num_of_imgs) + " screenshots.")
         self.status_label.configure(text="Screenshots Selected")
 
     def ImageNotFoundPopup(self, msg):
